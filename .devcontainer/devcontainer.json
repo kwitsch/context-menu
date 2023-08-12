@@ -1,0 +1,24 @@
+{
+  "name": "Default",
+  "runArgs": [
+    "--name",
+    "context-menu_devcontainer-${devcontainerId}"
+  ],
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "features": {
+    "ghcr.io/lukewiwa/features/shellcheck": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.detectIndentation": false
+      },
+      "extensions": [
+        "DavidAnson.vscode-markdownlint"
+      ]
+    }
+  }
+}
